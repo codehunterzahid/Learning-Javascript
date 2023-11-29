@@ -1,3 +1,5 @@
+// takking modulus of a Number and check if it is multiple of 7
+
 // let number = prompt("Enter a number");
 
 // if (number % 7 === 0) {
@@ -6,6 +8,10 @@
 //     console.log(number, "is not a multiple of 7");
 // }
 
+
+// Taking input of marks and printing grades accordingly
+
+/*
 let marks = prompt("Enter your marks");
 
 if(marks >= 80 && marks <= 100){
@@ -19,3 +25,4 @@ if(marks >= 80 && marks <= 100){
 } else {
     console.log("Fail");
 }
+*/

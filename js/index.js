@@ -61,3 +61,11 @@ while(guessNum != gameNum){
 
 console.log("You guessed right");
 */
+
+let name = prompt("Enter your Full Name");
+
+name= name.toLowerCase();
+
+let userName = `@${name}${name.length}`;
+
+console.log(userName);

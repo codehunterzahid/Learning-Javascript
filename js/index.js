@@ -46,7 +46,7 @@ for(let a = 0; a <= 100; a++){
 }
 */
 
-
+/*
 // creating a game in which user entered number should matched with gameNumber
 
 let gameNum = 13;
@@ -60,3 +60,4 @@ while(guessNum != gameNum){
 }
 
 console.log("You guessed right");
+*/

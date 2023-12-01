@@ -12,6 +12,7 @@
 // Taking input of marks and printing grades accordingly
 
 /*
+
 let marks = prompt("Enter your marks");
 
 if(marks >= 80 && marks <= 100){
@@ -26,3 +27,17 @@ if(marks >= 80 && marks <= 100){
     console.log("Fail");
 }
 */
+
+// using simple for loop printing even number 
+
+for(let a = 0; a <= 100; a = a+2){
+    console.log(a);
+}
+
+// Using if else to print even numbers 
+
+for(let a = 0; a <= 100; a++){
+    if(a%2 === 0){
+        console.log(a);
+    }
+}

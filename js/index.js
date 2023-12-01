@@ -28,6 +28,9 @@ if(marks >= 80 && marks <= 100){
 }
 */
 
+
+/*
+
 // using simple for loop printing even number 
 
 for(let a = 0; a <= 100; a = a+2){
@@ -41,3 +44,19 @@ for(let a = 0; a <= 100; a++){
         console.log(a);
     }
 }
+*/
+
+
+// creating a game in which user entered number should matched with gameNumber
+
+let gameNum = 13;
+
+let guessNum = prompt("Guess a number");
+
+while(guessNum != gameNum){
+
+    guessNum = prompt("Guess again");
+
+}
+
+console.log("You guessed right");

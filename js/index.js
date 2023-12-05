@@ -62,6 +62,9 @@ while(guessNum != gameNum){
 console.log("You guessed right");
 */
 
+/*
+// username system generated
+
 let name = prompt("Enter your Full Name");
 
 name= name.toLowerCase();
@@ -69,3 +72,10 @@ name= name.toLowerCase();
 let userName = `@${name}${name.length}`;
 
 console.log(userName);
+*/
+
+let marks = [87, 89, 92, 93, 94, 95, 96, 97, 98, 99, 100];
+
+let ave = marks.reduce((a, b) => a + b) / marks.length;
+
+console.log(ave)

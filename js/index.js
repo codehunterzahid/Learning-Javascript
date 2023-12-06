@@ -79,3 +79,15 @@ let marks = [87, 89, 92, 93, 94, 95, 96, 97, 98, 99, 100];
 let ave = marks.reduce((a, b) => a + b) / marks.length;
 
 console.log(ave)
+
+let mark = [87, 89, 92, 93, 94, 95, 96, 97, 98, 99, 100];
+
+let sum = 0;
+
+for (let val of mark) {
+    sum += val;
+}
+
+let avg = sum/mark.length;
+
+console.log(`Average is ${avg}`);

@@ -74,6 +74,7 @@ let userName = `@${name}${name.length}`;
 console.log(userName);
 */
 
+/*
 let marks = [87, 89, 92, 93, 94, 95, 96, 97, 98, 99, 100];
 
 let ave = marks.reduce((a, b) => a + b) / marks.length;
@@ -91,3 +92,4 @@ for (let val of mark) {
 let avg = sum/mark.length;
 
 console.log(`Average is ${avg}`);
+*/

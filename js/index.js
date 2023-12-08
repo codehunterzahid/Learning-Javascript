@@ -93,3 +93,15 @@ let avg = sum/mark.length;
 
 console.log(`Average is ${avg}`);
 */
+
+
+// program to apply discount on items array 
+
+let items = [200, 300, 400, 500, 900, 1200];
+
+for (let i = 0; i < items.length ; i++){
+    let offer = items[i] / 10;
+    items[i] -= offer;
+}
+
+console.log(items);

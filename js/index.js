@@ -94,7 +94,7 @@ let avg = sum/mark.length;
 console.log(`Average is ${avg}`);
 */
 
-
+/*
 // program to apply discount on items array 
 
 let items = [200, 300, 400, 500, 900, 1200];
@@ -105,3 +105,19 @@ for (let i = 0; i < items.length ; i++){
 }
 
 console.log(items);
+*/
+
+
+/*
+// program using array methods
+
+let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+
+let newCompanies = companies.shift();
+
+let newCompanies2 = companies.splice(1,1, "Ola");
+
+let newCompanies3 = companies.push("Amazon");
+
+console.log(companies);
+*/

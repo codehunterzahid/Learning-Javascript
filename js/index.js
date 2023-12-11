@@ -120,3 +120,18 @@ let newCompanies3 = companies.push("Amazon");
 
 console.log(companies);
 */
+
+// let myName = "Zahid";
+// console.log(typeof myName);
+
+
+// Creating a function having a str and printing vowels in that str
+function strFunction(str){
+    for (let i = 0; i < str.length ; i++){
+        if(str[i] === "a" || str[i] === "e" || str[i] === "i" || str[i] === "o" || str[i] === "u"){
+            console.log(str[i]);
+        }
+    }
+}
+
+strFunction("Hello I Love You");

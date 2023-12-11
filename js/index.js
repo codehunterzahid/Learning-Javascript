@@ -10,43 +10,39 @@
 
 
 // Taking input of marks and printing grades accordingly
-
-/*
-
 let marks = prompt("Enter your marks");
 
 if(marks >= 80 && marks <= 100){
-    console.log("Grade A");
+    // console.log("Grade A");
 } else if(marks >= 70 && marks <= 79){
-    console.log("Grade B");
+    // console.log("Grade B");
 } else if(marks >= 60 && marks <= 69){
-    console.log("Grade C");
+    // console.log("Grade C");
 } else if(marks >= 50 && marks <= 59){
-    console.log("Grade D");
+    // console.log("Grade D");
 } else {
-    console.log("Fail");
+    // console.log("Fail");
 }
-*/
 
 
-/*
+
 
 // using simple for loop printing even number 
 
 for(let a = 0; a <= 100; a = a+2){
-    console.log(a);
+    // console.log(a);
 }
 
 // Using if else to print even numbers 
 
 for(let a = 0; a <= 100; a++){
     if(a%2 === 0){
-        console.log(a);
+        // console.log(a);
     }
 }
-*/
 
-/*
+
+
 // creating a game in which user entered number should matched with gameNumber
 
 let gameNum = 13;
@@ -59,10 +55,10 @@ while(guessNum != gameNum){
 
 }
 
-console.log("You guessed right");
-*/
+// console.log("You guessed right");
 
-/*
+
+
 // username system generated
 
 let name = prompt("Enter your Full Name");
@@ -71,10 +67,11 @@ name= name.toLowerCase();
 
 let userName = `@${name}${name.length}`;
 
-console.log(userName);
-*/
+// console.log(userName);
 
-/*
+
+
+// trying arrays methods
 let marks = [87, 89, 92, 93, 94, 95, 96, 97, 98, 99, 100];
 
 let ave = marks.reduce((a, b) => a + b) / marks.length;
@@ -91,10 +88,10 @@ for (let val of mark) {
 
 let avg = sum/mark.length;
 
-console.log(`Average is ${avg}`);
-*/
+// console.log(`Average is ${avg}`);
 
-/*
+
+
 // program to apply discount on items array 
 
 let items = [200, 300, 400, 500, 900, 1200];
@@ -104,10 +101,10 @@ for (let i = 0; i < items.length ; i++){
     items[i] -= offer;
 }
 
-console.log(items);
-*/
+// console.log(items);
 
-/*
+
+
 // program using array methods
 
 let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
@@ -118,13 +115,13 @@ let newCompanies2 = companies.splice(1,1, "Ola");
 
 let newCompanies3 = companies.push("Amazon");
 
-console.log(companies);
-*/
+// console.log(companies);
+
 
 // let myName = "Zahid";
 // console.log(typeof myName);
 
-/*
+
 // Creating a function having a str and printing vowels in that str
 function strFunction(str){
     for (let i = 0; i < str.length ; i++){
@@ -134,11 +131,11 @@ function strFunction(str){
     }
 }
 
-strFunction("Hello I Love You");
-*/
+// strFunction("Hello I Love You");
 
 
-/*
+
+
 // same function using arrow function 
 const strFunction = (str) => {
     for (let i=0; i < str.length; i++){
@@ -147,101 +144,5 @@ const strFunction = (str) => {
         }
     }
 }
+// strFunction("Hello I Love You");
 
-strFunction("Hello I Love You");
-*/
-
-
-
-
-
-/*
-// same function using arrow function 
-const strFunction = (str) => {
-    for (let i=0; i < str.length; i++){
-        if(str[i] === "a" || str[i] === "A" || str[i] === "e" || str[i] === "E" || str[i] === "i" || str[i] === "I" || str[i] === "o" || str[i] === "O" || str[i] === "u" || str[i] === "U"){
-            console.log(str[i]);
-        }
-    }
-}
-
-strFunction("Hello I Love You");
-*/
-
-/*
-// same function using arrow function 
-const strFunction = (str) => {
-    for (let i=0; i < str.length; i++){
-        if(str[i] === "a" || str[i] === "A" || str[i] === "e" || str[i] === "E" || str[i] === "i" || str[i] === "I" || str[i] === "o" || str[i] === "O" || str[i] === "u" || str[i] === "U"){
-            console.log(str[i]);
-        }
-    }
-}
-
-strFunction("Hello I Love You");
-*/
-
-/*
-// same function using arrow function 
-const strFunction = (str) => {
-    for (let i=0; i < str.length; i++){
-        if(str[i] === "a" || str[i] === "A" || str[i] === "e" || str[i] === "E" || str[i] === "i" || str[i] === "I" || str[i] === "o" || str[i] === "O" || str[i] === "u" || str[i] === "U"){
-            console.log(str[i]);
-        }
-    }
-}
-
-strFunction("Hello I Love You");
-*/
-
-/*
-// same function using arrow function 
-const strFunction = (str) => {
-    for (let i=0; i < str.length; i++){
-        if(str[i] === "a" || str[i] === "A" || str[i] === "e" || str[i] === "E" || str[i] === "i" || str[i] === "I" || str[i] === "o" || str[i] === "O" || str[i] === "u" || str[i] === "U"){
-            console.log(str[i]);
-        }
-    }
-}
-
-strFunction("Hello I Love You");
-*/
-
-/*
-// same function using arrow function 
-const strFunction = (str) => {
-    for (let i=0; i < str.length; i++){
-        if(str[i] === "a" || str[i] === "A" || str[i] === "e" || str[i] === "E" || str[i] === "i" || str[i] === "I" || str[i] === "o" || str[i] === "O" || str[i] === "u" || str[i] === "U"){
-            console.log(str[i]);
-        }
-    }
-}
-
-strFunction("Hello I Love You");
-*/
-
-/*
-// same function using arrow function 
-const strFunction = (str) => {
-    for (let i=0; i < str.length; i++){
-        if(str[i] === "a" || str[i] === "A" || str[i] === "e" || str[i] === "E" || str[i] === "i" || str[i] === "I" || str[i] === "o" || str[i] === "O" || str[i] === "u" || str[i] === "U"){
-            console.log(str[i]);
-        }
-    }
-}
-
-strFunction("Hello I Love You");
-*/
-
-/*
-// same function using arrow function 
-const strFunction = (str) => {
-    for (let i=0; i < str.length; i++){
-        if(str[i] === "a" || str[i] === "A" || str[i] === "e" || str[i] === "E" || str[i] === "i" || str[i] === "I" || str[i] === "o" || str[i] === "O" || str[i] === "u" || str[i] === "U"){
-            console.log(str[i]);
-        }
-    }
-}
-
-strFunction("Hello I Love You");
-*/

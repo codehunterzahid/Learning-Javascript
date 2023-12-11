@@ -138,7 +138,7 @@ strFunction("Hello I Love You");
 */
 
 
-/*
+
 // same function using arrow function 
 const strFunction = (str) => {
     for (let i=0; i < str.length; i++){
@@ -149,6 +149,6 @@ const strFunction = (str) => {
 }
 
 strFunction("Hello I Love You");
-*/
+
 
 

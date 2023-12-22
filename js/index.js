@@ -141,3 +141,16 @@ const strFunction = (str) => {
   }
 };
 // strFunction("Hello I Love You");
+
+
+// swaing two numbers without using third variable
+let a = 10;
+let b = 20;
+
+// console.log(a, b);
+
+a = a + b;
+b = a - b;
+a = a - b;
+
+// console.log(a, b);

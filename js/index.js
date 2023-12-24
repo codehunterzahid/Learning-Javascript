@@ -1,3 +1,4 @@
+/*
 // takking modulus of a Number and check if it is multiple of 7
 
 // let number = prompt("Enter a number");
@@ -9,6 +10,7 @@
 // }
 
 // Taking input of marks and printing grades accordingly
+{
 let marks = prompt("Enter your marks");
 
 if (marks >= 80 && marks <= 100) {
@@ -22,7 +24,7 @@ if (marks >= 80 && marks <= 100) {
 } else {
   // console.log("Fail");
 }
-
+}
 // using simple for loop printing even number
 
 for (let a = 0; a <= 100; a = a + 2) {
@@ -60,6 +62,7 @@ let userName = `@${name}${name.length}`;
 // console.log(userName);
 
 // trying arrays methods
+{
 let marks = [87, 89, 92, 93, 94, 95, 96, 97, 98, 99, 100];
 
 let ave = marks.reduce((a, b) => a + b) / marks.length;
@@ -77,6 +80,7 @@ for (let val of mark) {
 let avg = sum / mark.length;
 
 // console.log(`Average is ${avg}`);
+}
 
 // program to apply discount on items array
 
@@ -122,7 +126,8 @@ function strFunction(str) {
 // strFunction("Hello I Love You");
 
 // same function using arrow function
-const strFunction = (str) => {
+{
+  const strFunction = (str) => {
   for (let i = 0; i < str.length; i++) {
     if (
       str[i] === "a" ||
@@ -141,16 +146,48 @@ const strFunction = (str) => {
   }
 };
 // strFunction("Hello I Love You");
+}
+
 
 
 // swaing two numbers without using third variable
 let a = 10;
 let b = 20;
 
-// console.log(a, b);
+console.log(a, b);
 
 a = a + b;
 b = a - b;
 a = a - b;
 
-// console.log(a, b);
+console.log("\n", a, b);
+
+*/
+let prompt;
+let operator = prompt("Enter any operator");
+let num1 = prompt("Enter first number");
+let num2 = prompt("Enter second number");
+
+num1 = Number(num1);
+num2 = Number(num2);
+
+switch (operator) {
+  case "+":
+    console.log(num1 + num2);
+    break;
+
+  case "-":
+      console.log(num1 - num2);
+  break;
+  
+  case "*":
+      console.log(num1 * num2);
+  break;
+
+  case "/":
+    console.log(num1 / num2);
+  break;
+
+  default:
+    console.log("Invalid input");
+}

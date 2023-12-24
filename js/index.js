@@ -163,7 +163,6 @@ a = a - b;
 console.log("\n", a, b);
 
 */
-let prompt;
 let operator = prompt("Enter any operator");
 let num1 = prompt("Enter first number");
 let num2 = prompt("Enter second number");

@@ -191,10 +191,21 @@ switch (operator) {
     console.log("Invalid input");
 }
 
-*/
 
 let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 array.forEach((val)=>{
   console.log(val * val);
 })
+
+
+
+let arr = [19, 92, 93, 24, 65];
+
+let array = arr.filter((val) => {
+  return val > 90 ;
+})
+
+console.log(array);
+
+*/

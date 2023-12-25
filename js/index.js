@@ -162,7 +162,7 @@ a = a - b;
 
 console.log("\n", a, b);
 
-*/
+
 let operator = prompt("Enter any operator");
 let num1 = prompt("Enter first number");
 let num2 = prompt("Enter second number");
@@ -190,3 +190,11 @@ switch (operator) {
   default:
     console.log("Invalid input");
 }
+
+*/
+
+let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+array.forEach((val)=>{
+  console.log(val * val);
+})

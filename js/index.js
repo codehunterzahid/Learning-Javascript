@@ -163,6 +163,8 @@ a = a - b;
 console.log("\n", a, b);
 
 
+//calculator
+
 let operator = prompt("Enter any operator");
 let num1 = prompt("Enter first number");
 let num2 = prompt("Enter second number");
@@ -192,6 +194,7 @@ switch (operator) {
 }
 
 
+// forEach loop
 let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 array.forEach((val)=>{
@@ -199,7 +202,7 @@ array.forEach((val)=>{
 })
 
 
-
+// using filter
 let arr = [19, 92, 93, 24, 65];
 
 let array = arr.filter((val) => {
@@ -207,5 +210,31 @@ let array = arr.filter((val) => {
 })
 
 console.log(array);
+
+
+// taking number as input and printing sum and product
+
+let n = prompt("Enter a number");
+
+let arr = [];
+
+for (let i = 1; i <= n; i++) {
+  arr[i-1] = i;
+}
+
+console.log(arr);
+
+let sum = arr.reduce((prev , curr) => {
+  return prev + curr;
+})
+
+console.log(sum)
+
+
+let product = arr.reduce((prev , curr) => {
+  return prev * curr;
+})
+
+console.log(product)
 
 */

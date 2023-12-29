@@ -51,15 +51,6 @@ while (guessNum != gameNum) {
 
 // console.log("You guessed right");
 
-// username system generated
-
-let name = prompt("Enter your Full Name");
-
-name = name.toLowerCase();
-
-let userName = `@${name}${name.length}`;
-
-// console.log(userName);
 
 // trying arrays methods
 {
@@ -237,4 +228,29 @@ let product = arr.reduce((prev , curr) => {
 
 console.log(product)
 
+
+// username system generated
+
+let name = prompt("Enter your Full Name");
+
+name = name.toLowerCase().replace(/\s+/g, '');
+
+let userName = `@${name}${name.length}`;
+console.log(userName);
+
 */
+
+let modebtn = document.querySelector("#btn");
+let curMode = "light";
+
+modebtn.addEventListener("click", () => {
+  if (curMode === "light"){
+    curMode = "dark";
+    document.querySelector("body").style.backgroundColor = "black";
+    document.querySelector("#btn").innerHTML = "Dark Mode";
+  } else {
+    curMode = "light";
+    document.querySelector("body").style.backgroundColor = "white";
+    document.querySelector("#btn").innerHTML = "Light Mode";
+  }
+})

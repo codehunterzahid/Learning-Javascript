@@ -244,7 +244,7 @@ let modebtn = document.querySelector("#btn");
 let curMode = "light";
 
 modebtn.addEventListener("click", () => {
-  if (curMode === "light"){
+  if (curMode === "light") {
     curMode = "dark";
     document.querySelector("body").style.backgroundColor = "black";
     document.querySelector("#btn").innerHTML = "Dark Mode";
@@ -253,4 +253,4 @@ modebtn.addEventListener("click", () => {
     document.querySelector("body").style.backgroundColor = "white";
     document.querySelector("#btn").innerHTML = "Light Mode";
   }
-})
+});

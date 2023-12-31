@@ -240,17 +240,21 @@ console.log(userName);
 
 */
 
-let modebtn = document.querySelector("#btn");
+let modeBtn = document.querySelector("#btn");
 let curMode = "light";
 
-modebtn.addEventListener("click", () => {
+modeBtn.addEventListener("click", () => {
   if (curMode === "light") {
     curMode = "dark";
     document.querySelector("body").style.backgroundColor = "black";
-    document.querySelector("#btn").innerHTML = "Dark Mode";
+    modeBtn.style.backgroundColor = "white";
+    modeBtn.style.color = "black";
+    modeBtn.innerHTML = "Dark Mode";
   } else {
     curMode = "light";
     document.querySelector("body").style.backgroundColor = "white";
-    document.querySelector("#btn").innerHTML = "Light Mode";
+    modeBtn.style.backgroundColor = "black";
+    modeBtn.style.color = "white";
+    modeBtn.innerHTML = "Light Mode";
   }
 });

@@ -258,4 +258,5 @@ name = name.toLowerCase().replace(/\s+/g, '');
 let userName = `@${name}${name.length}`;
 console.log(userName);
 
+
 */

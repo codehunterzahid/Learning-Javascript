@@ -1,3 +1,23 @@
+
+let modeBtn = document.querySelector("#btn");
+let curMode = "light";
+
+modeBtn.addEventListener("click", () => {
+  if (curMode === "light") {
+    curMode = "dark";
+    document.querySelector("body").style.backgroundColor = "black";
+    modeBtn.style.backgroundColor = "white";
+    modeBtn.style.color = "black";
+    modeBtn.innerHTML = "Dark Mode";
+  } else {
+    curMode = "light";
+    document.querySelector("body").style.backgroundColor = "white";
+    modeBtn.style.backgroundColor = "black";
+    modeBtn.style.color = "white";
+    modeBtn.innerHTML = "Light Mode";
+  }
+});
+
 /*
 // takking modulus of a Number and check if it is multiple of 7
 
@@ -240,21 +260,3 @@ console.log(userName);
 
 */
 
-let modeBtn = document.querySelector("#btn");
-let curMode = "light";
-
-modeBtn.addEventListener("click", () => {
-  if (curMode === "light") {
-    curMode = "dark";
-    document.querySelector("body").style.backgroundColor = "black";
-    modeBtn.style.backgroundColor = "white";
-    modeBtn.style.color = "black";
-    modeBtn.innerHTML = "Dark Mode";
-  } else {
-    curMode = "light";
-    document.querySelector("body").style.backgroundColor = "white";
-    modeBtn.style.backgroundColor = "black";
-    modeBtn.style.color = "white";
-    modeBtn.innerHTML = "Light Mode";
-  }
-});

@@ -261,4 +261,18 @@ console.log(userName);
 
 */
 
-// classes and objects (also prototype);
+// classes and objects (also prototype)
+class user{
+  constructor(name, age, email){
+    this.name = name;
+    this.age = age;
+    this.email = email;
+  }
+
+  viewData(){
+    console.log(this.name, this.age, this.email);
+  }
+}
+
+let student = new user("zahid", 20, "zahid@123");
+let teacher = new user("Shahzad", 27, "shahzad@123");

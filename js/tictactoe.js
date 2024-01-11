@@ -33,12 +33,13 @@ boxes.forEach((box) => {
     let isWinner = checkWinner();
 
     if (isWinner) {
-      showWinner("X");
-    } else if (count == 9) {
+      showWinner(turnO ? "O" : "X");
+    } else if (count === 9) {
       draw();
     }
   });
 });
+
 
 const showWinner = (winner) => {
   msgContainer.classList.remove("hide");
@@ -48,13 +49,14 @@ const showWinner = (winner) => {
   });
 };
 
-const draw = (draw) => {
+const draw = () => {
   msgContainer.classList.remove("hide");
   msg.innerText = `This is a draw`;
   boxes.forEach((box) => {
     box.disabled = true;
   });
 };
+
 
 const checkWinner = () => {
   for (let condition of winConditions) {

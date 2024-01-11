@@ -29,7 +29,7 @@ boxes.forEach((box) => {
     }
     box.disabled = true;
     count++;
-    
+
     let isWinner = checkWinner();
 
     if (isWinner) {
@@ -39,7 +39,6 @@ boxes.forEach((box) => {
     }
   });
 });
-
 
 const showWinner = (winner) => {
   msgContainer.classList.remove("hide");
@@ -56,7 +55,6 @@ const draw = () => {
     box.disabled = true;
   });
 };
-
 
 const checkWinner = () => {
   for (let condition of winConditions) {
@@ -83,12 +81,12 @@ const newGame = () => {
 };
 
 const resetGame = () => {
-    turnO = true;
-    boxes.forEach((box) => {
-      box.innerText = "";
-      box.disabled = false;
-    });
-  };
+  turnO = true;
+  boxes.forEach((box) => {
+    box.innerText = "";
+    box.disabled = false;
+  });
+};
 
 resetBtn.addEventListener("click", resetGame);
 newGameBtn.addEventListener("click", newGame);

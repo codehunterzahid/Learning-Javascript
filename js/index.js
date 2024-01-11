@@ -262,6 +262,7 @@ console.log(userName);
 
 
 // classes and objects (also prototype)
+let Data = `Name: ${name} \nAge: ${age} \nEmail: ${email}`;
 class user{
   constructor(name, age, email){
     this.name = name;
@@ -270,11 +271,24 @@ class user{
   }
 
   viewData(){
-    console.log(this.name, this.age, this.email);
+    console.log(Data);
+  }
+}
+
+class Admin extends user{
+  constructor(name, age, email, role){
+    super(name, age, email);
+    this.role = role;
+  }
+
+  editData(){
+    Data = `Name: ${this.name} \nAge: ${this.age} \nEmail: ${this.email} \nRole: ${this.role}`
   }
 }
 
 let student = new user("zahid", 20, "zahid@123");
 let teacher = new user("Shahzad", 27, "shahzad@123");
+
+let admin = new Admin("Shahzaib", 20, "shahzaib@123", "admin");
 
 */

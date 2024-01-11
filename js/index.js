@@ -259,7 +259,7 @@ let userName = `@${name}${name.length}`;
 console.log(userName);
 
 
-*/
+
 
 // classes and objects (also prototype)
 class user{
@@ -276,3 +276,5 @@ class user{
 
 let student = new user("zahid", 20, "zahid@123");
 let teacher = new user("Shahzad", 27, "shahzad@123");
+
+*/

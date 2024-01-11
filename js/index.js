@@ -291,4 +291,5 @@ let teacher = new user("Shahzad", 27, "shahzad@123");
 
 let admin = new Admin("Shahzaib", 20, "shahzaib@123", "admin");
 
+admin.editData();
 */

@@ -7,6 +7,8 @@ let boxes = document.querySelectorAll(".box");
 let turnO = true;
 let count = 0;
 
+// Winning Conditions
+
 let winConditions = [
   [0, 1, 2],
   [3, 4, 5],
@@ -17,6 +19,9 @@ let winConditions = [
   [0, 4, 8],
   [2, 4, 6],
 ];
+
+//Game Logic
+
 
 boxes.forEach((box) => {
   box.addEventListener("click", () => {
@@ -39,6 +44,8 @@ boxes.forEach((box) => {
     }
   });
 });
+
+//Functions for showing winner and draw
 
 const showWinner = (winner) => {
   msgContainer.classList.remove("hide");
@@ -70,6 +77,8 @@ const checkWinner = () => {
     }
   }
 };
+
+// Functions for new game and reset
 
 const newGame = () => {
   turnO = true;

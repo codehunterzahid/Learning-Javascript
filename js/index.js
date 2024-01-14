@@ -292,3 +292,24 @@ let teacher = new user("Shahzad", 27, "shahzad@123");
 let admin = new Admin("Shahzaib", 20, "shahzaib@123", "admin");
 
 */
+
+const players = [
+  {name: "Zahid", age: 40},
+  {name: "Shahzad", age: 27},
+  {name: "Shahzaib", age: 22},
+  {name: "Ali", age: 21},
+  {name: "Ahmed", age: 10},
+  {name: "Usman", age: 20},
+  {name: "Umar", age: 18},
+  {name: "Rizwan", age: 20},
+  {name: "Hassan", age: 14},
+  {name: "Bakar", age: 20},
+];
+
+const adults = players.filter((val) => {
+  if(val.age > 20){
+    return val;
+  }
+})
+
+console.log(adults);

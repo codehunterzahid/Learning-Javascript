@@ -337,5 +337,5 @@ const headOfficeEmployees = {
   "gender-female": employees.filter((val)=> val.gender === "female"),
 }
 
-const getData = headOfficeEmployees["age-below-20"];
+const getData = headOfficeEmployees["age-above-20"];
 // console.log(getData)

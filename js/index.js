@@ -312,4 +312,30 @@ const adults = players.filter((val) => {
   }
 })
 
-console.log(adults);
+// console.log(adults);
+
+
+const employees = [
+  {name: "Zahid", age: 40, gender : "male", city: "lahore"},
+  {name: "Shahzad", age: 27, gender : "female", city: "karachi"},
+  {name: "Shahzaib", age: 22, gender : "male", city: "lahore"},
+  {name: "Ali", age: 21, gender : "female", city: "karachi"},
+  {name: "Ahmed", age: 10, gender : "male", city: "lahore"},
+  {name: "Usman", age: 20, gender : "female", city: "karachi"},
+  {name: "Umar", age: 18, gender : "male", city: "karachi"},
+  {name: "Rizwan", age: 20, gender : "female", city: "lahore"},
+  {name: "Hassan", age: 14, gender : "female", city: "karachi"},
+  {name: "Bakar", age: 20, gender : "female", city: "lahore"},
+];
+
+const headOfficeEmployees = {
+  "from-lahore": employees.filter((val)=> val.city === "lahore"),
+  "from-karachi": employees.filter((val)=> val.city === "karachi"),
+  "age-above-20" : employees.filter((val)=> val.age > 20),
+  "age-below-20" : employees.filter((val)=> val.age < 20),
+  "gender-male": employees.filter((val)=> val.gender === "male"),
+  "gender-female": employees.filter((val)=> val.gender === "female"),
+}
+
+const getData = headOfficeEmployees["age-below-20"];
+console.log(getData)

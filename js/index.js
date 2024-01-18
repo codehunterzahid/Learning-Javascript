@@ -339,3 +339,4 @@ const headOfficeEmployees = {
 
 const getData = headOfficeEmployees["age-above-20"];
 // console.log(getData)
+

@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Javascript</title>
 
     <style>
-        #btn{
-            background-color: black;
-            color: white;
-            font-weight: bold;
-            padding: 10px;
-            border: 1px solid white;
-            border-radius: 10px;
-        }
+      #btn, .exBtn {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 10px;
+      }
 
-        .link{
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-            font-size: 30px;
-            padding: 10px;
-            border: 1px solid black;
-            border-radius: 12px;
-            background-color: white;
-            margin-top: 10rem;
-            transition: all 0.5s;
-        }
-        .link:hover{
-            background-color: skyblue;
-        }
-
+      .link {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 30px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 12px;
+        background-color: white;
+        margin-top: 10rem;
+        transition: all 0.5s;
+      }
+      .link:hover {
+        background-color: skyblue;
+      }
     </style>
-</head>
-<body>
-    
-    <button id="btn">Light Mode</button> <br> <br>
+  </head>
+  <body>
+    <div>
+      <button id="btn">Light Mode</button> <br />
+      <br />
+      <a class="link" href="html/tictactoe.html">Tic Tac Toe</a>
+    </div> <br><br>
 
-    <a class="link" href="html/tictactoe.html">Tic Tac Toe</a>
+    <div>
+        <button id="getapi" class="exBtn">Get API</button>
+        <p id="showData"></p>
+    </div>
 
-</body>
+  </body>
 
-<script src="./js/index.js"></script>
-<script src="./js/api.js"></script>
-
+  <script src="./js/index.js"></script>
+  <script src="./js/api.js"></script>
 </html>

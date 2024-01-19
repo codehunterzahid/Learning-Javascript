@@ -1,8 +1,13 @@
-const URl = "https://api.publicapis.org/entries";
+const URl = "https://catfact.ninja/fact";
+const para = document.querySelector("#showData");
+const btn = document.querySelector("#getapi");
 
-const publicNews = async () =>{
+
+const catFacts = async () =>{
     let response = await fetch (URl);
     console.log(response);
-}
+    let finalData = await response.json();
+    para.innerText = finalData.fact;
+};
 
-publicNews();
+btn.addEventListener("click",catFacts);

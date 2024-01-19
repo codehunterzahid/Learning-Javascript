@@ -9,4 +9,5 @@ const catFacts = async () =>{
     para.innerText = finalData.fact;
 };
 
+
 btn.addEventListener("click",catFacts);

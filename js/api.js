@@ -48,6 +48,5 @@ function Product(name, price) {
   cart.addProduct(product4);
   
   let total = cart.totalAmount();
-  console.log(`Total: ${total}`);
-  
+  console.log(`Total: ${total}`);  
   

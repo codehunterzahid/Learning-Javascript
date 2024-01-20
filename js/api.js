@@ -12,3 +12,4 @@ const catFacts = async () =>{
 
 btn.addEventListener("click",catFacts);
 */
+

@@ -13,6 +13,8 @@ const catFacts = async () =>{
 btn.addEventListener("click",catFacts);
 */
 
+// Point of Sale system
+
 function Product(name, price) {
     this.name = name;
     this.price = price;

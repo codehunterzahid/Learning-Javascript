@@ -1,3 +1,4 @@
+/*
 const URl = "https://catfact.ninja/fact";
 const para = document.querySelector("#showData");
 const btn = document.querySelector("#getapi");
@@ -9,5 +10,5 @@ const catFacts = async () =>{
     para.innerText = finalData.fact;
 };
 
-
 btn.addEventListener("click",catFacts);
+*/

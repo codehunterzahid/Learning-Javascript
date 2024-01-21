@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #662C91;
+}
+
+.todo-container{
+    width: 100%;
+    max-width: 500px;
+    height: 20vh;
+    margin-top: 5rem;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 3rem 4rem;
+}
+
+h1 .icon{
+    width: 40px;
+    height: 40px;
+    margin-left: 1rem;
+}
+
+.input-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    background-color: #3F6895;
+    border-radius: 30px;
+    padding-left: 1rem;
+}
+
+.input-box input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.input-box input::placeholder{
+    color: rgba(227, 221, 221, 0.962);
+}
+
+.input-box button{
+    background-color: #EE6C4D;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    height: 3rem;
+    width: 10rem;
+    border-radius: 30px;
+    border: none;
+}
+
+.input-box button:hover{
+    cursor: pointer;
+}

@@ -1,4 +1,3 @@
-
 let modeBtn = document.querySelector("#btn");
 let curMode = "light";
 
@@ -294,48 +293,110 @@ let admin = new Admin("Shahzaib", 20, "shahzaib@123", "admin");
 */
 
 const players = [
-  {name: "Zahid", age: 40},
-  {name: "Shahzad", age: 27},
-  {name: "Shahzaib", age: 22},
-  {name: "Ali", age: 21},
-  {name: "Ahmed", age: 10},
-  {name: "Usman", age: 20},
-  {name: "Umar", age: 18},
-  {name: "Rizwan", age: 20},
-  {name: "Hassan", age: 14},
-  {name: "Bakar", age: 20},
+  { name: "Zahid", age: 40 },
+  { name: "Shahzad", age: 27 },
+  { name: "Shahzaib", age: 22 },
+  { name: "Ali", age: 21 },
+  { name: "Ahmed", age: 10 },
+  { name: "Usman", age: 20 },
+  { name: "Umar", age: 18 },
+  { name: "Rizwan", age: 20 },
+  { name: "Hassan", age: 14 },
+  { name: "Bakar", age: 20 },
 ];
 
 const adults = players.filter((val) => {
-  if(val.age > 20){
+  if (val.age > 20) {
     return val;
   }
-})
+});
 
 // console.log(adults);
 
-
 const employees = [
-  {name: "Zahid", age: 40, gender : "male", city: "lahore"},
-  {name: "Shahzad", age: 27, gender : "female", city: "karachi"},
-  {name: "Shahzaib", age: 22, gender : "male", city: "lahore"},
-  {name: "Ali", age: 21, gender : "female", city: "karachi"},
-  {name: "Ahmed", age: 10, gender : "male", city: "lahore"},
-  {name: "Usman", age: 20, gender : "female", city: "karachi"},
-  {name: "Umar", age: 18, gender : "male", city: "karachi"},
-  {name: "Rizwan", age: 20, gender : "female", city: "lahore"},
-  {name: "Hassan", age: 14, gender : "female", city: "karachi"},
-  {name: "Bakar", age: 20, gender : "female", city: "lahore"},
+  { name: "Zahid", age: 40, gender: "male", city: "lahore" },
+  { name: "Shahzad", age: 27, gender: "female", city: "karachi" },
+  { name: "Shahzaib", age: 22, gender: "male", city: "lahore" },
+  { name: "Ali", age: 21, gender: "female", city: "karachi" },
+  { name: "Ahmed", age: 10, gender: "male", city: "lahore" },
+  { name: "Usman", age: 20, gender: "female", city: "karachi" },
+  { name: "Umar", age: 18, gender: "male", city: "karachi" },
+  { name: "Rizwan", age: 20, gender: "female", city: "lahore" },
+  { name: "Hassan", age: 14, gender: "female", city: "karachi" },
+  { name: "Bakar", age: 20, gender: "female", city: "lahore" },
 ];
 
 const headOfficeEmployees = {
-  "from-lahore": employees.filter((val)=> val.city === "lahore"),
-  "from-karachi": employees.filter((val)=> val.city === "karachi"),
-  "age-above-20" : employees.filter((val)=> val.age > 20),
-  "age-below-20" : employees.filter((val)=> val.age < 20),
-  "gender-male": employees.filter((val)=> val.gender === "male"),
-  "gender-female": employees.filter((val)=> val.gender === "female"),
-}
+  "from-lahore": employees.filter((val) => val.city === "lahore"),
+  "from-karachi": employees.filter((val) => val.city === "karachi"),
+  "age-above-20": employees.filter((val) => val.age > 20),
+  "age-below-20": employees.filter((val) => val.age < 20),
+  "gender-male": employees.filter((val) => val.gender === "male"),
+  "gender-female": employees.filter((val) => val.gender === "female"),
+};
 
 const getData = headOfficeEmployees["age-above-20"];
 // console.log(getData)
+
+function Product(name, price) {
+  this.name = name;
+  this.price = price;
+}
+
+function myCart() {
+  this.products = [];
+}
+
+myCart.prototype.addProduct = function (product) {
+  this.products.push(product);
+};
+
+myCart.prototype.totalAmount = function () {
+  return this.products.reduce((total, product) => {
+    console.log(`${product.name}: ${product.price}`);
+    return total + product.price;
+  }, 0);
+};
+
+let product1 = new Product("Biryani Masala", 80);
+let product2 = new Product("Rice", 156);
+let product3 = new Product("Yogurt", 100);
+let product4 = new Product("Coke", 196);
+
+let cart = new myCart();
+
+cart.addProduct(product1);
+cart.addProduct(product2);
+cart.addProduct(product3);
+cart.addProduct(product4);
+
+let total = cart.totalAmount();
+console.log(`Total: ${total}`);
+
+// switch statement
+let val = "A";
+
+switch (val) {
+  case "a":
+  case "A":
+    console.log("Your enter vowel");
+    break;
+  case "e":
+  case "E":
+    console.log("Your enter vowel");
+    break;
+  case "i":
+  case "I":
+    console.log("Your enter vowel");
+    break;
+  case "o":
+  case "O":
+    console.log("Your enter vowel");
+    break;
+  case "u":
+  case "U":
+    console.log("Your enter vowel");
+    break;
+  default:
+    console.log("You enter consonent");
+}

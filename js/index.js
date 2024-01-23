@@ -373,6 +373,8 @@ cart.addProduct(product4);
 let total = cart.totalAmount();
 console.log(`Total: ${total}`);
 
+
+/*
 // switch statement
 let val = "A";
 
@@ -400,3 +402,4 @@ switch (val) {
   default:
     console.log("You enter consonent");
 }
+*/

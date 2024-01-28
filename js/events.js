@@ -30,4 +30,3 @@ txt.addEventListener("mouseenter", () => {
 txt.addEventListener("mouseleave", () => {
   txt.style.color = originalColor;
 });
-

@@ -12,5 +12,3 @@ const catFacts = async () =>{
 
 btn.addEventListener("click",catFacts);
 */
-
-// Point of Sale system

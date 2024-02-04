@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.home {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url(../Assets/home.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 8vh;
+    margin-bottom: 10rem;
+}
+
+.nav1{
+    width: 70%;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+}
+.nav1 p, .nav2 p{
+    color: white;
+    padding: 10px;
+    margin: 0px 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav2{
+    width: 30%;
+    background-color: orange;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main h1{
+    margin-bottom: 3rem;
+}
+
+.btn{
+    text-decoration: none;
+    margin-left: 47%;
+    margin-top: 100px;
+    background-color: orange;
+    padding: 15px;
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+
+}
+
